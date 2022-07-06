@@ -65,7 +65,7 @@ async function createCert(heroName) {
     console.log(url)
     const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
 
-    const fontUrl = 'assets/fonts/tradbdo.ttf'
+    const fontUrl = 'assets/fonts/ANDLSO.TTF'
     const fontBytes = await fetch(fontUrl).then(res => res.arrayBuffer())
 
     const pdfDoc = await PDFDocument.load(existingPdfBytes)
